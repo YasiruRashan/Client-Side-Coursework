@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">  <!--The default character-set in HTML5 is UTF-8.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamHomes</title>
+    <link rel="stylesheet" href="css/properties.css">
+    <link href='https://fonts.googleapis.com/css?family=Catamaran' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link rel="stylesheet" href="css/fa/css/all.min.css">
+    <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/lightbox.min.css" >
+    <script src="lightbox/lightbox.js"></script>
+    <script src="jqueryFile.js"></script>
+   
+    
+    
+  </head>
+    <body>
+     
+        <header class="sticky">
+          <a href="home.html" class="logo">DreamHomes.</a> <!--creating the logo of the website-->
+          <div class="menuToggle" onclick="toggleMenu();"></div>
+          <ul class="navigation">      <!--adding navigation links to the navigation bar-->
+             <li><a href="home.html">Home</a></li>
+             <li><a href="homeFinder.html">HomeFinder</a></li>
+             <li><a href="propertyOne.html">Properties</a></li>
+             <li><a href="contactUs.html">Contact Us</a></li>
+             
+         </ul>
+        </header> 
+         <section class="search" ;>  <!--creating a section tag to hold a large image and a short description of the property.-->
+            <div class="row">
+                <div class="column">
+                    <h2>Property Seven</h2><br>
+                     <p> Situated on the border of Quinton/Harborne also known as Quinborne, lies this beautiful development consisting of 1 & 2 bedroom apartments.
+                        Hadley Lodge is a friendly, peaceful place to live as you have your very own apartment as well as the use of communal areas where you can interact and meet up with other residents and guests. The design and specification of Hadley Lodge is simply second to none, with beautiful contrasting colours and modern detailing throughout. All apartments are designed to a high specification and provide spacious living space.
+                        Within all apartments you have a generous sized hallway, finished with a neutral and light colour scheme. </p><br>
+                    <ul class="features">
+                        <li>No of Bedrooms: 3</li>
+                        <li>Prpperty Type: House</li>
+                        <li>Price: $695000</li>
+                        <li>location: Hadley Lodge, Quinton Lane, Quinton, B32</li>
+                        <li>tenure: Freehold</li>
+                    </ul>
+                </div>
+                <div class="column">
+                   <div class="imageBox">
+                       <img src="img/prop7pic1.jpg">
+                   </div> 
+                </div>   
+            </div>
+            <hr>
+
+           <!---->
+            <div class="gallery"> <!--creating a section to hold thumbnail images. css lightbox is used here.-->
+              <h3 class="pics">More photos....</h3>
+            <a href="img/prop1pic2.jpg" data-lightbox="mygallery"><img src="img/prop1pic2small.jpg"></a> <!-- a thubnail image is  maximised into its default image size with a one mouse click-->
+            <a href="img/prop1pic3.jpg" data-lightbox="mygallery"><img src="img/prop1pic3small.jpg"></a>
+            <a href="img/prop2pic3.jpg" data-lightbox="mygallery"><img src="img/prop2pic3small.jpg"></a>
+            <a href="img/prop1pic4.jpg" data-lightbox="mygallery"><img src="img/prop1pic4small.jpg"></a>
+            <a href="img/prop2pic5.jpg" data-lightbox="mygallery"><img src="img/prop2pic5small.jpg"></a>
+            <a href="img/prop2pic6.jpg" data-lightbox="mygallery"><img src="img/prop2pic6small.jpg"></a>
+            <a href="img/prop2pic8.jpg" data-lightbox="mygallery"><img src="img/prop2pic8small.jpg"></a>
+            <a href="img/prop2pic1.jpg" data-lightbox="mygallery"><img src="img/prop2pic1small.jpg"></a>
+
+            <p id="prop7">
+              <button class="add">favourite</button>  <!--Creating add button to add property to the favourite list-->
+              <button class="remove">delete</button> <!--Creating remove button to remove property from the favourite list-->
+            </p>
+          </div>
+  
+         </section>
+         <section>
+        
+          <div id="tabs">        <!--creating jquery tab plane to hold three tabs such as long description and, floor plan and google map.-->       
+            <ul>
+              <li><a href="#tabs-1">Property description</a></li>
+              <li><a href="#tabs-2">Floor Plan</a></li>
+              <li><a href="#tabs-3">location</a></li>
+            </ul>
+            <div id="tabs-1">  <!--tab for the poperty description-->
+            <p>
+                A rare opportunity to purchase a new country house set within a stunning, mature parkland setting only 3 miles from Oxford city
+                 centre. Superbly located for Oxford Parkway rail station for services to Marylebone and schools including Chandlings, 
+                 St Edward's and Abingdon. Birch Copse offers an outstanding opportunity to acquire a new country house modeled on Georgian lines,
+                 set in 32 acres, yet only 3 miles from Oxford The housefers superb family accommodation with 3 bedrooms.
+            </p><br>
+            <p>
+             There is also a detached triple garage with flat above and new hard tennis court. The property overlooks its gardens and grounds 
+             and is located in a private setting yet close to excellent road and rail links as well as some of the finest schools in the country.
+              The seller's solicitors advise that the property benefits from the mixed-use rates for stamp duty land tax. Please note however 
+             that this is a specialist area and interested parties must take their own independent advice.Boars Hill is a sought after residential area famous for
+            its wooded rural setting, just three miles from the centre of Oxford which provides a wide range of shopping, cultural, recreational and educational facilities.
+            It is well served by communications with access to the A34 and Oxford ring road, connecting to the M4 and M40 motorways, with the regional
+             centres of Newbury and Swindon also within easy reach. Communications by rail are also excellent with fast trains from either Oxford or
+              Didcot to London Paddington taking about fifty and forty five minutes respectively.
+             In addition the new Oxford Parkway station has services to London Marylebone in fifty six minutes.
+            </p><br>
+            <p>
+                The house is situated within close proximity to many schools in the Boars Hill area including Abingdon, Radley, Cothill and 
+                Chandlings and also within easy distance to central Oxford where The Dragon, St Edwards, Madgalen College, Summer Fields, Wychwood
+                 and Oxford High School are located.
+            </p><br>
+           
+
+            </div>
+            <div id="tabs-2">  <!--tab for the follor plan-->
+              <img src="img/prop1Plan.jpg" class="tab" alt="Cinque Terre" width="700" height="50">
+            </div>
+
+
+            <div id="tabs-3">  <!--tab for the google map location-->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3572.109646106299!2d0.0802613105479301!
+                3d51.39110686536441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8ab82cc8f3cb1%3A0xc746da03b0c6c716!2sPetts%20Wood%20Rd%
+                2C%20Petts%20Wood%2C%20Orpington%2C%20UK!5e0!3m2!1sen!2slk!4v1608819259066!5m2!1sen!2slk" 
+                width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+               
+            </section>
+                <!--creating the footer of the web site-->
+
+        <footer class="low">
+        <ul class="navigator">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="homeFinder">HomeFinder</a></li>
+            <li><a href="propertyOne.html">properties</a></li>
+            <li><a href="contactUs.html">contact Us</a></li>
+        </ul>   
+       </footer> 
+       <!--Adding social media icons-->
+       <div class="low">
+         <div class="topicons">
+             <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+             <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+             <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+             <a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+         </div>
+         <p class="copy"> &copy; DreamHomes 2020</p>
+         <a href="#top"><i class="far fa-arrow-alt-circle-up"></i></a> 
+       </div> 
+            
+       <script> /*To make the header  sticky when scrolling down the page*/ 
+        window.addEventListener('scroll',function(){
+            const header =document.querySelector('header');
+            header.classList.toggle("sticky",window.scrollY >0);
+        });
+                
+        $( function() { /*function for the jqueru UI tabs*/
+          $( "#tabs" ).tabs();
+        } );
+        
+       
+      function toggleMenu() {   /*function to make the header responsive when fiiting with different screens.*/
+       const menuToggle = document.querySelector('.menuToggle');
+       const navigation = document.querySelector('.navigation')
+       menuToggle.classList.toggle('active');
+       navigation.classList.toggle('active');
+     }
+    </script> 
+        
+        
+</body>
+</html>            
+

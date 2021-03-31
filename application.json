@@ -1,0 +1,121 @@
+{
+	"properties": [
+        {
+            "id":"prop1",
+			"type":"House",
+            "bedrooms":2,
+			"price":650000,
+			"tenure":"Freehold",
+			"description":"Attractive three bedroom semi-detached family home situated within 0.5 miles of Petts Wood station with fast trains to London and within easy walking distance of local shops, schools, bus routes and National Trust woodland. The property comprises; two receptions, fitted 18'9 x 10'1 kitchen/breakfast room and conservatory. The property also benefits from having a utility room and cloakroom. To the first floor there are three bedrooms and a family bathroom with separate WC.Additional features include double glazing, gas central heating and a well presented interior...",
+			"location":"Petts Wood Road, Petts Wood, Orpington",
+			"picture":"img/prop1pic1small.jpg",
+			"url":"propertyOne.html",
+            "added": {
+                "month":"May",
+                "day":12,
+                "year":2018
+            }
+        },
+	
+        {
+            "id":"prop2",
+			"type":"Flat",
+            "bedrooms":2,
+			"price":299995,
+			"tenure":"Freehold",
+			"description":"Presented in excellent decorative order throughout is this two double bedroom, two bathroom, garden flat.The modern fitted kitchen is open plan to the living room which boasts solid wooden floors and includes integrated appliances including a dishwasher & a washing machine. This large open plan benefits from bi folding doors onto a secluded private courtyard garden. Both bedrooms are double sized, and the family bathroom boasts a matching three piece suite a shower attachment over the bath. There is also a separate wet room. There are walnut doors throughout and wiring for Sky TV/aerial points in the living room/kitchen and both bedrooms.<br>This apartment being only five years old, is still under a 10 year building guarantee...",
+			"location":"Crofton Road Orpington BR6",
+			"picture":"img/prop2pic1small.jpg",
+			"url":"propertyTwo.html",
+            "added": {
+                "month":"September",
+                "day":14,
+                "year":2018
+            }
+        },
+
+        {
+            "id":"prop3",
+			"type":"House",
+            "bedrooms":4,
+			"price":725000,
+			"tenure":"Leasehold",
+			"description":"This substantial sized detached house is situated in a sought after South Nottinghamshire location in between Ruddington and Edwalton conveniently positioned surrounded by the open countryside and within reach of Rushcliffe Country Park, great transport links to Nottingham City Centre, West Bridgford and Leicestershire as well as range of amenities such as shops and schools including Crossdale Primary School, The South Wolds Academy and many more, this property must be viewed to be fully appreciated. Occupying a generous sized plot, this exceptionally well presented home would be a great purchase for any growing family and offers plenty of potential to extend, creating versatility. To the ground floor is a spacious lounge benefitting from high vaulted ceilings, a modern kitchen open plan to a dining and living area and two double bedrooms serviced by the three piece bathroom suite and an en-suite. The first floor carries a generous sized master bedroom with access to an en-suite and a dressing area. Outside is a wrap around garden featuring ample off road parking for multiple vehicles, an outbuilding and an extensive lawn along with secure gated access...",
+            "location":"South Nottinghamshire CR4",
+			"picture":"img/prop2pic2small.jpg",
+			"url":"propertyThree.html",
+            "added": {
+                "month":"May",
+                "day":22,
+                "year":2018
+            }
+        },
+        
+          {
+            "id":"prop4",
+			"type":"Flat",
+            "bedrooms":2,
+			"price":950000,
+			"tenure":"Freehold",
+			"description":"A rare opportunity to purchase a magnificent loft style apartment, set within a beautiful Grade II listed Modernist building. Designed by the architects Burnet, Tait & Lorne, Bruno Court was built in 1935-36 as an extension to the German Hospital and is located on the North West corner of Fassett Square, a peaceful and beautifully landscaped garden square with exclusive access to its residents.With approx. 1,165 sq ft of accommodation, this apartment comprises three double bedrooms, main family bathroom, en suite, and a stunning open plan kitchen/reception with solid wood flooring and high ceilings, making this a wonderful place to entertain family and friends. From the reception there is a door out to a communal hallway which provides direct access to the well-maintained, 'secret' communal gardens of Bruno Court...",         
+			"location":"Bruno Court, 10 Fassett Square, London, E8",
+			"picture":"img/prop2pic3small.jpg",
+			"url":"propertyFour.html",
+            "added": {
+                "month":"November",
+                "day":15,
+                "year":2018
+            }
+        },
+
+        {
+            "id":"prop5",
+			"type":"House",
+            "bedrooms":3,
+			"price":250000,
+			"tenure":"Leasehold",
+			"description":"The property is arranged over the first and second floors of this mid terraced Victorian property and offers light in abundance due to its East to West orientation. The accommodation is laid out at just over 1500 sq ft, entered via its own entrance on the raised ground floor.The stairs lead you to the first floor landing taking you to a beautiful main reception which features a period fireplace and sash windows, kitchen/diner with direct access to its own section of rear garden and refitted shower room. The upper floor has two further double bedrooms with over 100sqft worth of extra storage space in the loft....",
+			"location":"Parkholme Road, London, E8",
+			"picture":"img/prop1pic2small.jpg",
+			"url":"propertyFive.html",
+            "added": {
+                "month":"December",
+                "day":15,
+                "year":2018
+            }
+        },
+
+        {
+            "id":"prop6",
+			"type":"Apartment",
+            "bedrooms":3,
+			"price":350000,
+			"tenure":"Freehold",
+			"description":"Opportunity to acquire a traditional period building that has recently been converted into 9 luxury apartments, with freehold, in the highly desirable area of Meads Village, Eastbourne. The apartments are spread over three floors and have been finished to a high specification. Each apartment is unique and has 2-bedrooms and 2-bathrooms (a master bathroom and an en-suite), gas central heating and access to the communal gardens, with 4 apartments having their own private garden. There are seven parking spaces in front of the building available to purchase and the development has an ICW warranty.The total size of the property is 8,341 sqft...",
+			"location":"Denton Road, Eastbourne, East Sussex, BN20",
+			"picture":"img/prop1pic4small.jpg",
+			"url":"propertySix.html",
+            "added": {
+                "month":"June",
+                "day":10,
+                "year":2018
+            }
+         },
+        
+         {
+            "id":"prop7",
+			"type":"House",
+            "bedrooms":3,
+			"price":695000,
+			"tenure":"Freehold",
+			"description":"Situated on the border of Quinton/Harborne also known as Quinborne, lies this beautiful development consisting of 1 & 2 bedroom apartments.Hadley Lodge is a friendly, peaceful place to live as you have your very own apartment as well as the use of communal areas where you can interact and meet up with other residents and guests. The design and specification of Hadley Lodge is simply second to none, with beautiful contrasting colours and modern detailing throughout. All apartments are designed to a high specification and provide spacious living space. Within all apartments you have a generous sized hallway, finished with a neutral and light colour scheme. All bathrooms are walk in showers with fitted units.You also have fantastic sized storage cupboards, perfect for your mop and vacuum....",
+			"location":"Hadley Lodge, Quinton Lane, Quinton, B32",
+			"picture":"img/prop1pic3small.jpg",
+			"url":"propertySeven.html",
+            "added": {
+                "month":"January",
+                "day":17,
+                "year":2018
+           }
+        }        
+]}

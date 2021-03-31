@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">  <!--The default character-set in HTML5 is UTF-8.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamHomes</title>
+    <link rel="stylesheet" href="css/properties.css">
+    <link href='https://fonts.googleapis.com/css?family=Catamaran' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link rel="stylesheet" href="css/fa/css/all.min.css">
+    <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/lightbox.min.css" >
+    <script src="lightbox/lightbox.js"></script>
+    <script src="jqueryFile.js"></script>
+
+    
+    
+  </head>
+    <body>
+     
+        <header class="sticky">
+          <a href="home.html" class="logo">DreamHomes.</a> <!--creating the logo of the website-->          
+         <div class="menuToggle" onclick="toggleMenu();"></div>
+          <ul class="navigation">      <!--adding navigation links to the navigation bar-->
+             <li><a href="home.html">Home</a></li>
+             <li><a href="homeFinder.html">HomeFinder</a></li>
+             <li><a href="propertyOne.html">Properties</a></li>
+             <li><a href="contactUs.html">Contact Us</a></li>
+             
+         </ul>
+        </header> 
+         <section class="search" ;>  <!--creating a section tag to hold a large image and a short description of the property.-->
+            <div class="row">
+                <div class="column">
+                    <h2>Property Two</h2><br><br>
+                    <p>Presented in excellent decorative order throughout is this two double bedroom, two bathroom, garden flat.
+                    The modern fitted kitchen is open plan to the living room which boasts solid wooden floors and includes integrated appliances including a dishwasher
+                     & a washing machine. This large open plan benefits from bi folding doors onto a secluded private courtyard garden. Both bedrooms are double sized, and the
+                     family bathroom boasts a matching three piece suite a shower attachment over the bath. There is also a separate wet room. There are walnut doors throughout
+                   <br>This apartment being only five years old, is still under a 10 year building </p><br>
+                    <ul class="features">
+                        <li>No of Bedrooms: 2</li>
+                        <li>Property Type: Flat</li>
+                        <li>Price: $299995</li>
+                        <li>location: Crofton Road Orpington BR6</li>
+                        <li>tenure: Freehold</li>
+                    </ul>
+                </div>
+                <div class="column">
+                   <div class="imageBox">
+                       <img src="img/prop2pic1.jpg">
+                   </div> 
+                </div>   
+            </div>
+            <hr>
+
+           <!---->
+            <div class="gallery"> <!--creating a section to hold thumbnail images. css lightbox is used here.-->
+              <h3 class="pics">More photos....</h3>
+            <a href="img/prop2pic1.jpg" data-lightbox="mygallery"><img src="img/prop2pic1small.jpg"></a> <!-- a thubnail image is  maximised into its default image size with a one mouse click-->
+            <a href="img/prop2pic2.jpg" data-lightbox="mygallery"><img src="img/prop2pic2small.jpg"></a>
+            <a href="img/prop2pic3.jpg" data-lightbox="mygallery"><img src="img/prop2pic3small.jpg"></a>
+            <a href="img/prop2pic4.jpg" data-lightbox="mygallery"><img src="img/prop2pic4small.jpg"></a>
+            <a href="img/prop2pic5.jpg" data-lightbox="mygallery"><img src="img/prop2pic5small.jpg"></a>
+            <a href="img/prop2pic6.jpg" data-lightbox="mygallery"><img src="img/prop2pic6small.jpg"></a>
+            <a href="img/prop2pic7.jpg" data-lightbox="mygallery"><img src="img/prop2pic7small.jpg"></a>
+            <a href="img/prop1pic3.jpg" data-lightbox="mygallery"><img src="img/prop1pic3small.jpg"></a>
+
+            <p id="prop2">
+              <button class="add">favourite</button>  <!--Creating add button to add property to the favourite list-->
+              <button class="remove">delete</button>   <!--Creating remove button to remove property from the favourite list-->
+            </p>
+          </div>
+  
+         </section>
+         
+         <section>
+          <div id="tabs">        <!--creating jquery tab plane to hold three tabs such as long description and, floor plan and google map.-->       
+            <ul>
+              <li><a href="#tabs-1">Property description</a></li>
+              <li><a href="#tabs-2">Floor Plan</a></li>
+              <li><a href="#tabs-3">location</a></li>
+            </ul>
+            <div id="tabs-1">  <!--tab for the poperty description-->
+              <p>The Fulford Road Development is located on Fulford Road. A short walk from the River Ouse and the stunning City Centre of York. 
+                The location is perfect for both long term residents and short term holiday makers/business visitors as it has a wealth of local facilities
+                 as well as the city cent on its door step. Notable local landmarks are the river ouse walk, Clifford's Tower and the Castle 
+                 Museum, all a short walk away.</p><br>
+               <p>The development was formerly two large turn of the century townhouses, number 71 and number 73 Fulford
+                Road. Once grand residences the properties were more recently operated as boutique bed and breakfasts before the current development took place. The new development has extensively renovated both
+                properties and now offers a unique range of properties.</p><br>
+               <p>Number 71 has been converted into 4 apartments, a spacious one bedroomed apartment benefiting from a
+                large bay window to the front of the property on the ground floor, a two bedroomed apartment on the first floor, a two bedroomed duplex to the rear over the ground and first floors and the second and 
+                third floors have been designed into a stunning 3 bedrooms duplex penthouse with loft style living space and balcony</p><br>
+               <p>Number 73 has retained the prestigious town house which offers 7 large ensuite bedrooms arrange over the
+                ground and first floors off a grand entrance hall and staircase and a living/entertaining suite on the top floor
+                that takes advantage of the roof heigh and original features to create a one of a kind living/dining/kitchen
+                space. This property would make a one of a kind statement city centre residence or a highly profitable
+                shot term let opportunity. To the rear of 73 the development is completed with two further apartments both with their own access.</p><br> 
+                <a href="propertyThree.html" class="btn"><b>Go to the Next Property</b></a>
+          
+            </div>
+            <div id="tabs-2">  <!--tab for the follor plan-->
+              <img src="img/prop2Plan.jpg" class="tab" alt="Cinque Terre" width="700" height="70">
+            </div>
+
+
+            <div id="tabs-3">  <!--tab for the google map location-->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2490.6143520941027!2d0.0699023157650498!3d51.37338597961333!2m3!1f0!2f0
+                !3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8ab6ac2bdc8d1%3A0xb0dde3c09939f924!2sCrofton%20Rd%2C%20Orpington%2C%20UK!5e0!3m2!1sen!2slk!4v1
+                31723!5m2!1sen!2slk" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+                </iframe>
+               
+            </section>
+                <!--creating the footer of the web site-->
+
+        <footer class="low">
+        <ul class="navigator">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="homeFinder">HomeFinder</a></li>
+            <li><a href="propertyOne.html">properties</a></li>
+            <li><a href="contactUs.html">contact Us</a></li>
+        </ul>   
+       </footer> 
+       <!--Adding social media icons-->
+       <div class="low">
+         <div class="topicons">
+             <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+             <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+             <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+             <a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+         </div>
+         <p class="copy"> &copy; DreamHomes 2020</p>
+         <a href="#top"><i class="far fa-arrow-alt-circle-up"></i></a> 
+       </div> 
+            
+       <script> /*To make the header  sticky when scrolling down the page*/
+        window.addEventListener('scroll',function(){
+            const header =document.querySelector('header');
+            header.classList.toggle("sticky",window.scrollY >0);
+        });
+                
+        $( function() {  /*function for the jqueru UI tabs*/
+          $( "#tabs" ).tabs();
+        } );
+        
+       
+
+      function toggleMenu() {  /*function to make the header responsive when fiiting with different screens.*/
+       const menuToggle = document.querySelector('.menuToggle');
+       const navigation = document.querySelector('.navigation')
+       menuToggle.classList.toggle('active');
+       navigation.classList.toggle('active');
+     }
+    </script>                 
+</body>
+</html>            

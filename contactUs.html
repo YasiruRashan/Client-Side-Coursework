@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">  <!--The default character-set in HTML5 is UTF-8.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <title>DreamHomes</title>
+    <link rel="stylesheet" href="css/contactUs.css">
+    <link href='https://fonts.googleapis.com/css?family=Catamaran' rel='stylesheet'>
+    <link rel="stylesheet" href="css/fa/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>                                
+    <body>
+     
+      <header>
+        <a href="home.html" class="logo">DreamHomes.</a>        <!--creating the logo of the website-->
+           <div class="menuToggle" onclick="toggleMenu();"></div>
+             <ul class="navigation">                  <!--adding navigation links to the navigation bar-->
+             <li><a href="home.html">Home</a></li>
+             <li><a href="homeFinder.html">HomeFinder</a></li>
+             <li><a href="propertyOne.html">Properties</a></li>  
+             <li><a href="contactUs.html">Contact Us</a></li>   
+            </ul>   
+      </header>
+
+       <section class="links">   <!--Adding contact details section-->     
+           <div>
+               <div>
+                   <div>
+                    <h2 class="top">Contact Us</h2>
+                    <p>Feel free to contact our experienced agent for your needs.</p><br><br>
+
+                   <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>   <!--details of the address with a specific icon-->
+                    <div class="text">
+                       <h3>Address</h3>
+                       <p>DreamHomes  Co.,Parkholme Road, London, E8</p>
+                    </div>
+                  </div>
+
+                  <div>
+                  <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>  <!--details of the phone no. with a specific icon-->
+                   <div class="text">
+                    <h3>Phone</h3>
+                    <p>+44 20 7940 7540. </p>
+                   </div>
+                  </div>
+
+                 <div class="box">
+                  <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i>  <!--details of the email with a specific icon-->
+                  </div>
+                    <div class="text">
+                    <h3>Email</h3>
+                    <p>ask@dreamhome.com</p>
+                   </div>
+                </div>           
+            </div>
+       </div>
+    </section>
+
+    <section class="contact">  <!--Creating a section to hold a contact form-->
+        <div class="Title"></div>
+     <div class="contactForm">
+         <h3>Send Message</h3>
+          <div class="inputbox">
+              <input type ="text" placeholder="Name">
+          </div>
+          <div class="inputbox">
+            <input type ="text" placeholder="Email">
+          </div>
+          <div class="inputbox">
+            <textarea placeholder="write your problem"></textarea>
+         </div> 
+        <div class="inputbox">
+            <input type ="submit" value="send">
+          </div>
+
+     </div>
+    </section>
+                 <!--creating the footer of the web site-->
+    <footer class="low">
+        <ul class="navigator">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="homeFinder">HomeFinder</a></li>
+            <li><a href="propertyOne.html">properties</a></li>
+            <li><a href="contactUs.html">contact Us</a></li>
+        </ul>   
+       </footer> 
+                            <!--Adding social media icons-->
+       <div class="low">
+         <div class="topicons">
+             <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+             <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+             <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+             <a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+         </div>
+         <p class="copy"> &copy; DreamHomes 2020</p>
+         <a href="#top"><i class="far fa-arrow-alt-circle-up"></i></a> 
+       </div> 
+         
+       <script>  /*To make the header  sticky when scrolling down the page*/ 
+        window.addEventListener('scroll',function(){
+            const header =document.querySelector('header');
+            header.classList.toggle("sticky",window.scrollY >0);
+        });
+
+       function toggleMenu() { /*function to make the header responsive when fiiting with different screens.*/
+         const menuToggle = document.querySelector('.menuToggle');
+         const navigation = document.querySelector('.navigation')
+         menuToggle.classList.toggle('active');
+         navigation.classList.toggle('active');
+       }            
+       </script> 
+     
+     </body>
+   </html>   

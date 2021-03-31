@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">    <!--The default character-set in HTML5 is UTF-8.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamHomes</title>
+    <link rel="stylesheet" href="css/homefinder.css">
+    <link href='https://fonts.googleapis.com/css?family=Catamaran' rel='stylesheet'>
+    <link rel="stylesheet" href="css/fa/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="jqueryFile.js"></script>
+    <script src="jquery-ui.js"></script>
+   <link href="jquery-ui.css" rel="stylesheet">
+   <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+     <header>
+        <a href="home.html" class="logo">DreamHomes.</a>  <!--creating the logo of the website-->
+        
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">   <!--adding navigation links to the navigation bar-->
+           <li><a href="home.html">Home</a></li>
+           <li><a href="homeFinder.html">HomeFinder</a></li>
+           <li><a href="propertyOne.html">Properties</a></li>
+           <li><a href="contactUs.html">Contact Us</a></li>   
+        </ul>   
+     </header>
+
+      <section class="search" style= background:url(csp.jpg);> <!--Adding background image to this section-->
+        <div class="title">
+          <h2 class="titleText"><span>Find</span> your home</h2>
+        </div>
+            <!--Creating a form to get data from the user to find out relavant property for them-->
+
+        <h3>Property Type:</h3>     <!--creating a form label for the property-->
+        <select name="property" id="property">
+          <option value="House">House</option>
+          <option value="Flat">Flat</option>
+          <option value="Any" selected>Any</option>
+        </select>
+
+        <div class="bedrooms">   <!--creating a form label for the no of bedrooms-->
+            <h3>Min Bedrooms:</h3>
+              <input id="minimum" value="4">
+              
+              <h3>Max Bedrooms:</h3>
+              <input id="maximum" value="7">
+            </div>
+            
+             <div class="Timebar">   <!--creating a form label for the date range-->
+               <h3>Added Date</h3>
+               <select name="time" id="date">
+                <option value="January" value="february" value="March" value="April">01/01/2018 - 30/04/2018</option>
+                <option value="May"  value="June" value="July" value="August">01/05/2018 - 31/08/2018</option>
+                <option value="September" value="October" value="November" value="December">01/09/2018 - 31/12/2018</option>
+                <option value="AnyDate">Any Date</option>
+               </select>
+              </div> 
+              
+              
+            <p>  
+              <h3>Price Range</h3>   <!--creating a form label for the date range-->
+              <input type="text" id="quantity" readonly class="priceText">
+              <br><br>
+
+              <div id="price"></div>  
+              
+             <button id="Search" class="btn">Search</button>  <!--creating a search button to get the results.-->
+           
+           
+            <div id="session1"></div> <!--This session holds all the results searched by the user.-->
+            
+            
+            <button class="view">Display Favourites List</button>   <!--creating a search button to get the see the favourite list.-->
+            <button class="clear">Empty the list</button>          <!--creating a search button to empty the favourite list..-->
+            
+            
+            <div id="session2"></div>  <!--This session holds all the properties in  the favourite list-->
+           
+            </section>
+                            <!--Connecting a internal  jason file to retrieve data through a search. -->
+           <script>        
+             var data= {
+              
+	    "properties": [
+            {
+            "id":"prop1",
+			"type":"House",
+            "bedrooms":2,
+			"price":650000,
+			"tenure":"Freehold",
+			"description":"Attractive three bedroom semi-detached family home situated within 0.5 miles of Petts Wood station with fast trains to London and within easy walking distance of local shops, schools, bus routes and National Trust woodland. The property comprises; two receptions, fitted 18'9 x 10'1 kitchen/breakfast room and conservatory. The property also benefits from having a utility room and cloakroom. To the first floor there are three bedrooms and a family bathroom with separate WC.Additional features include double glazing, gas central heating and a well presented interior...",
+			"location":"Petts Wood Road, Petts Wood, Orpington",
+			"picture":"img/prop1pic1small.jpg",
+			"url":"propertyOne.html",
+            "added": {
+                "month":"May",
+                "day":12,
+                "year":2018
+            }
+        },
+	
+        {
+            "id":"prop2",
+			"type":"Flat",
+            "bedrooms":2,
+			"price":299995,
+			"tenure":"Freehold",
+			"description":"Presented in excellent decorative order throughout is this two double bedroom, two bathroom, garden flat.The modern fitted kitchen is open plan to the living room which boasts solid wooden floors and includes integrated appliances including a dishwasher & a washing machine. This large open plan benefits from bi folding doors onto a secluded private courtyard garden. Both bedrooms are double sized, and the family bathroom boasts a matching three piece suite a shower attachment over the bath. There is also a separate wet room. There are walnut doors throughout and wiring for Sky TV/aerial points in the living room/kitchen and both bedrooms.<br>This apartment being only five years old, is still under a 10 year building guarantee...",
+			"location":"Crofton Road Orpington BR6",
+			"picture":"img/prop2pic1small.jpg",
+			"url":"propertyTwo.html",
+            "added": {
+                "month":"September",
+                "day":14,
+                "year":2018
+            }
+        },
+
+        {
+            "id":"prop3",
+			"type":"House",
+            "bedrooms":4,
+			"price":725000,
+			"tenure":"Leasehold",
+			"description":"This substantial sized detached house is situated in a sought after South Nottinghamshire location in between Ruddington and Edwalton conveniently positioned surrounded by the open countryside and within reach of Rushcliffe Country Park, great transport links to Nottingham City Centre, West Bridgford and Leicestershire as well as range of amenities such as shops and schools including Crossdale Primary School, The South Wolds Academy and many more, this property must be viewed to be fully appreciated. Occupying a generous sized plot, this exceptionally well presented home would be a great purchase for any growing family and offers plenty of potential to extend, creating versatility. To the ground floor is a spacious lounge benefitting from high vaulted ceilings, a modern kitchen open plan to a dining and living area and two double bedrooms serviced by the three piece bathroom suite and an en-suite. The first floor carries a generous sized master bedroom with access to an en-suite and a dressing area. Outside is a wrap around garden featuring ample off road parking for multiple vehicles, an outbuilding and an extensive lawn along with secure gated access...",
+            "location":"South Nottinghamshire CR4",
+			"picture":"img/prop3pic1small.jpg",
+			"url":"propertyThree.html",
+            "added": {
+                "month":"May",
+                "day":22,
+                "year":2018
+            }
+        },
+        
+          {
+            "id":"prop4",
+			"type":"Flat",
+            "bedrooms":2,
+			"price":950000,
+			"tenure":"Freehold",
+			"description":"A rare opportunity to purchase a magnificent loft style apartment, set within a beautiful Grade II listed Modernist building. Designed by the architects Burnet, Tait & Lorne, Bruno Court was built in 1935-36 as an extension to the German Hospital and is located on the North West corner of Fassett Square, a peaceful and beautifully landscaped garden square with exclusive access to its residents.With approx. 1,165 sq ft of accommodation, this apartment comprises three double bedrooms, main family bathroom, en suite, and a stunning open plan kitchen/reception with solid wood flooring and high ceilings, making this a wonderful place to entertain family and friends. From the reception there is a door out to a communal hallway which provides direct access to the well-maintained, 'secret' communal gardens of Bruno Court...",         
+			"location":"Bruno Court, 10 Fassett Square, London, E8",
+			"picture":"img/prop4pic1small.jpg",
+			"url":"propertyFour.html",
+            "added": {
+                "month":"January",
+                "day":15,
+                "year":2018
+            }
+        },
+
+        {
+            "id":"prop5",
+			"type":"House",
+            "bedrooms":3,
+			"price":250000,
+			"tenure":"Leasehold",
+			"description":"The property is arranged over the first and second floors of this mid terraced Victorian property and offers light in abundance due to its East to West orientation. The accommodation is laid out at just over 1500 sq ft, entered via its own entrance on the raised ground floor.The stairs lead you to the first floor landing taking you to a beautiful main reception which features a period fireplace and sash windows, kitchen/diner with direct access to its own section of rear garden and refitted shower room. The upper floor has two further double bedrooms with over 100sqft worth of extra storage space in the loft....",
+			"location":"Parkholme Road, London, E8",
+			"picture":"img/prop5pic1small.jpg",
+			"url":"propertyFive.html",
+            "added": {
+                "month":"September",
+                "day":15,
+                "year":2018
+            }
+        },
+
+        {
+            "id":"prop6",
+			"type":"Apartment",
+            "bedrooms":3,
+			"price":350000,
+			"tenure":"Freehold",
+			"description":"Opportunity to acquire a traditional period building that has recently been converted into 9 luxury apartments, with freehold, in the highly desirable area of Meads Village, Eastbourne. The apartments are spread over three floors and have been finished to a high specification. Each apartment is unique and has 2-bedrooms and 2-bathrooms (a master bathroom and an en-suite), gas central heating and access to the communal gardens, with 4 apartments having their own private garden. There are seven parking spaces in front of the building available to purchase and the development has an ICW warranty.The total size of the property is 8,341 sqft...",
+			"location":"Denton Road, Eastbourne, East Sussex, BN20",
+			"picture":"img/prop6pic1small.jpg",
+			"url":"propertySix.html",
+            "added": {
+                "month":"September",
+                "day":10,
+                "year":2018
+            }
+         },
+        
+         {
+            "id":"prop7",
+			"type":"House",
+            "bedrooms":3,
+			"price":695000,
+			"tenure":"Freehold",
+			"description":"Situated on the border of Quinton/Harborne also known as Quinborne, lies this beautiful development consisting of 1 & 2 bedroom apartments.Hadley Lodge is a friendly, peaceful place to live as you have your very own apartment as well as the use of communal areas where you can interact and meet up with other residents and guests. The design and specification of Hadley Lodge is simply second to none, with beautiful contrasting colours and modern detailing throughout. All apartments are designed to a high specification and provide spacious living space. Within all apartments you have a generous sized hallway, finished with a neutral and light colour scheme. All bathrooms are walk in showers with fitted units.You also have fantastic sized storage cupboards, perfect for your mop and vacuum....",
+			"location":"Hadley Lodge, Quinton Lane, Quinton, B32",
+			"picture":"img/prop7pic1small.jpg",
+			"url":"propertySeven.html",
+            "added": {
+                "month":"January",
+                "day":17,
+                "year":2018
+           }
+        }        
+]}
+             
+
+</script>
+
+<footer class="low">
+   <ul class="navigator">
+       <li><a href="home.html">Home</a></li>
+       <li><a href="homeFinder.html">HomeFinder</a></li>
+       <li><a href="propertyOne.html">properties</a></li>
+       <li><a href="contactUs.html">contact Us</a></li>
+   </ul>   
+  </footer> 
+  <!--Adding social media icons-->
+  <div class="low">
+    <div class="topicons">
+        <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <p class="copy"> &copy; DreamHomes 2020</p>
+    <a href="#top"><i class="far fa-arrow-alt-circle-up"></i></a> 
+  </div>
+
+    <!--To make the header  sticky when scrolling down the page-->
+  <script>
+    window.addEventListener('scroll',function(){
+        const header =document.querySelector('header');
+        header.classList.toggle("sticky",window.scrollY >0);
+    });
+
+   function toggleMenu() {    /*to make the header responsive when fiiting with different screens.*/
+     const menuToggle = document.querySelector('.menuToggle');
+     const navigation = document.querySelector('.navigation')
+     menuToggle.classList.toggle('active');
+     navigation.classList.toggle('active');
+   }
+  
+  
+</script>
+</body>
+</html>

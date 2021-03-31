@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   /*css flex box is used here*/
+    font-family:'Catamaran',sans-serif;
+    scroll-behavior: smooth;
+}    
+ 
+body{
+    min-height: 1000px;
+}    
+
+                /* css styles for the header section of the page*/
+
+header
+{
+    position: fixed;
+    top: 0;
+    left:0;
+    width:100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    
+} 
+.sticky{
+    background:rgb(92, 71, 71);
+    padding: 10px;
+    
+    
+}   
+.logo{       /*Css styles for the logo section*/
+    color: rgb(168, 168, 108);
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+
+}
+
+.navigation{
+    position: relative;
+    display: flex;
+
+}
+
+.navigation li{
+    List-style: none;
+    margin-left:30px;
+
+}
+.navigation li a
+{
+    text-decoration: none;
+    color: rgb(86, 174, 185);
+    font-weight: 300;
+    font-style: italic;
+}
+
+.navigation li a:hover{
+    color:rgb(233, 76, 76)
+}
+
+.links{
+    padding: 100px 100px;
+    min-height:50vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction:column;
+    background-color: rgb(204, 201, 192);
+    
+}
+               /* css styles for the contact links section*/
+.top{
+    font-size: 28px;
+    color: aliceblue;
+}
+
+.contact{
+    background:url(maria.jpg);
+    background-size:cover;
+} 
+.title{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}  
+
+.titleText{
+        color:#111;
+        font-size: 2em;
+        font-weight: 300;
+}
+
+.titleText span{
+        color:rgb(247, 178, 146);
+        font-weight: 700;
+        font-size: 1.5em;
+    
+}
+
+.contactForm{
+    padding: 75px  50px;
+    background:rgb(245, 238, 227);
+    box-shadow:0 15px 50px rgba(0,0,0,0.1);
+    max-width: 500px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+
+
+          /*Css styles for the contactForm section*/
+
+}
+.contactForm h3{
+    color: #111;
+    font-size:1.2em;
+    margin-bottom:20px;
+    font-weight:500px;
+}
+.inputbox
+{
+    position: relative;
+    width:100%;
+    margin-bottom:20px;
+}
+.inputbox input,
+.inputbox textarea{
+    width:100%;
+    border:1px solid black;
+    padding: 10px;
+    color:#111;
+    outline:none;
+    font-size:16px;
+    font-weight: 300;
+    resize: none;
+
+}
+.inputbox  input[type="submit"]
+{
+    font-size:1em;
+    color:#fff;
+    background:rgb(73, 151, 219);
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition:0.5S;
+    max-width: 100px;
+    font-weight: 500;
+    border:none;
+    cursor:pointer;
+
+      /*Css styles for the footer of the web page*/
+
+}
+.low{
+    
+    top: 0;
+    left:0;
+    width:100%;
+    padding: 40px 100px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.navigator{
+    position: relative;
+    display: flex;
+
+}
+
+.navigator li{
+    List-style: none;
+    margin-left:30px;
+
+}
+.navigator li a
+{
+    text-decoration: none;
+    color: rgb(20, 19, 19);
+    font-weight: 300;
+    font-style: italic;
+}
+
+.navigator li a:hover{
+    color:rgb(233, 76, 76);
+    
+}
+    /* Media queries for the web page*/
+
+@media(max-width:750px) /* This  media query will only apply, If the screen size is 750px or less, */ 
+{
+    header,
+    .sticky 
+    {
+        padding:10px 20px;
+    }
+    .navigation{    /*the navigation link dissapper automatically*/ 
+        display: none
+    }
+    .navigation.active{  /* the navigation links will change their position when clicking*/
+        width:100%;
+        height: calc(100% -110px);
+        position:fixed;
+        top:68px;
+        left:0;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background:rgb(243, 222, 222);
+        padding: 10%;
+
+    }
+    .navigation li{
+       margin-left: 0;
+    }
+    .navigation li a{  /*styles for the naviagtion links.*/
+        text-decoration: none;
+        color:#111;
+        font-size:1.3em;
+        font-weight:300;
+
+    }
+     
+    .menuToggle{   /* css styles for the menu toggle*/
+        position: relative;
+        width:35px;
+        height:35px;
+        background-size: 30px;
+        background: url(menu.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;    
+
+    }
+    .menuToggle.active{    /*css styles when clicking the menu toggle icon*/
+        background-size: 25px;
+        background: url(close.png);
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+    .sticky.menuToggle
+    {
+        filter:invert(1);
+    }
+} 
+ 
+ 
+
+

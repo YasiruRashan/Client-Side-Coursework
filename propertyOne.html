@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"> <!--The default character-set in HTML5 is UTF-8.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamHomes</title>
+    <link rel="stylesheet" href="css/properties.css">
+    <link href='https://fonts.googleapis.com/css?family=Catamaran' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link rel="stylesheet" href="css/fa/css/all.min.css">
+    <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/lightbox.min.css" >
+    <script src="lightbox/lightbox.js"></script>
+    <script src="jqueryFile.js"></script>
+
+    
+    
+  </head>
+    <body>
+     
+        <header class="sticky">
+          <a href="home.html" class="logo">DreamHomes.</a> <!--creating the logo of the website-->
+          <div class="menuToggle" onclick="toggleMenu();"></div>
+          <ul class="navigation">      <!--adding navigation links to the navigation bar-->
+             <li><a href="home.html">Home</a></li>
+             <li><a href="homeFinder.html">HomeFinder</a></li>
+             <li><a href="propertyOne.html">Properties</a></li>
+             <li><a href="contactUs.html">Contact Us</a></li>
+             
+         </ul>
+        </header> 
+         <section class="search">  <!--creating a section tag to hold a large image and a short description of the property.-->
+            <div class="row">
+                <div class="column">
+                    <h2>Property One </h2><br>
+                    <p>Attractive three bedroom semi-detached family home situated within 0.5 miles of Petts Wood station with fast trains to London and within
+                        easy walking distance of local shops, schools, bus routes and National Trust woodland. The property comprises; two 
+                        receptions, fitted 18'9 x 10'1 kitchen/
+                        breakfast room and conservatory. 
+                        The property also benefits from having a utility room and cloakroom. To the first floor there are three bedrooms and a family bathroom with separate WC.
+                         Additional features include double glazing, gas central heating and a well presented interior</p><br>
+                    <ul class="features">
+                        <li>No of Bedrooms:  2</li>
+                        <li>Property Type:  House</li>
+                        <li>Price:  $650000</li>
+                        <li>location:  Petts Wood Road, Petts Wood, Orpington</li>
+                        <li>tenure :  Freehold</li>
+                    </ul>
+                </div>
+                <div class="column">
+                   <div class="imageBox">
+                       <img src="img/prop1pic1.jpg" alt="prop1">
+                   </div> 
+                </div>   
+            </div>
+            <hr>
+
+           <!---->
+          <div class="gallery"> <!--creating a section to hold thumbnail images. css lightbox is used here.-->
+              <h3 class="pics">More photos....</h3>
+            <a href="img/prop1pic1.jpg" data-lightbox="mygallery"><img src="img/prop1pic1small.jpg" alt="small1"></a> <!-- a thubnail image is  maximised into its default image size with a one mouse click-->
+            <a href="img/prop1pic2.jpg" data-lightbox="mygallery"><img src="img/prop1pic2small.jpg" alt="small2"></a>
+            <a href="img/prop1pic3.jpg" data-lightbox="mygallery"><img src="img/prop1pic3small.jpg" alt="small3"></a>
+            <a href="img/prop1pic4.jpg" data-lightbox="mygallery"><img src="img/prop1pic4small.jpg" alt="small4"></a>
+            <a href="img/prop2pic3.jpg" data-lightbox="mygallery"><img src="img/prop2pic3small.jpg" alt="small5"></a>
+            <a href="img/prop2pic4.jpg" data-lightbox="mygallery"><img src="img/prop2pic4small.jpg" alt="small6"></a>
+            <a href="img/prop2pic1.jpg" data-lightbox="mygallery"><img src="img/prop2pic1small.jpg" alt="small7"></a>
+            <a href="img/prop2pic2.jpg" data-lightbox="mygallery"><img src="img/prop2pic2small.jpg" alt="small8"></a>
+          
+
+          
+            <p id="prop1">
+              <button class="add">favourite</button>  <!--Creating add button to add property to the favourite list-->
+              <button class="remove">delete</button>   <!--Creating remove button to remove property from the favourite list-->
+            </p>
+          </diV>  
+          
+          
+         
+         </section>
+
+         <section>
+          <div id="tabs">        <!--creating jquery tab plane to hold three tabs such as long description and, floor plan and google map.-->       
+            <ul>
+              <li><a href="#tabs-1">Property description</a></li>
+              <li><a href="#tabs-2">Floor Plan</a></li>
+              <li><a href="#tabs-3">location</a></li>
+            </ul>
+            <div id="tabs-1">  <!--tab for the poperty description-->
+              <p>Attractive three bedroom semi-detached family home situated within 0.5 miles of Petts Wood station with fast trains to London and within
+                easy walking distance of local shops, schools, bus routes and National Trust woodland. The property comprises; two receptions, fitted 18'9 x 10'1 kitchen/
+                breakfast room and conservatory. 
+                The property also benefits from having a utility room and cloakroom. To the first floor there are three bedrooms and a family bathroom with separate WC.
+                 Additional features include double glazing, gas central heating and a well presented interior</p><br>
+              <p>
+                A sensational circular platform hosts the feature dining area offering a sophisticated space to dine in style, with its curves mirrored by 
+                beautiful stained glass windows, made by Chiswick Stain Glass, creators of the iconic windows at The Ivy. The kitchen is fully fitted with 
+                state of the art Gaggenau appliances and the exquisite built in cabinetry provides an abundance of storage. There is a convenient 
+                separate utility room. The temperature controlled, glass fronted wine cellar is not only an attractive feature, but perfect for storing a wine connoisseur’s collection, fitted with a secure remote locking device.
+              </p><br>  
+              <P> There is a cloakroom adjacent to the wine 
+                cellar.On the upper level you will find a luxurious principle suite, with fully fitted walk in dressing room and beautifully appointed
+                ensuite bathroom, complete with dual vanity and separate bath with TV and shower. The transparency of the bedroom windows is switchable on and off at the touch of a button allowing full privacy. There are two further beautifully appointed en suite bedrooms on the lower level with small lit terraces. In addition, an impressive 10 seater cinema room is perfect for both family living and entertaining. A bathroom
+                has thoughtfully been added here to allow for use as a fourth bedroom if desired.
+              </p><br>
+
+                
+               <P><b>Residents of Anchor Brewhouse benefit from excellent 24 hour security and concierge service, as well as secure underground parking in which this apartment benefits from two spaces.</b>
+                Anchor Brewhouse is an iconic warehouse building located on the south side of Tower Bridge in Shad Thames. Ideally located for access to the City and Canary Wharf, it also enjoys an abundance of 
+                excellent cafes, bars, a theatre and riverside restaurants including The Ivy on its doorstep. Tower Hill (District and Circle lines, DLR, Riverbus services) and London Bridge (Overground services, Jubilee and Northern lines)
+                are both approximately 0.6 miles.</p><br>
+                <a href="propertyTwo.html" class="btn"><b>Go to the Next Property</b></a>
+
+            </div>
+            <div id="tabs-2">  <!--tab for the floor plan-->
+              <img src="img/prop1Plan.jpg" class="tab" alt="Cinque Terre" width="700" height="100">
+            </div>
+
+
+            <div id="tabs-3">  <!--tab for the google map location-->
+                <iframe class="google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3572.109646106299!2d0.0802613105479301!
+                3d51.39110686536441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8ab82cc8f3cb1%3A0xc746da03b0c6c716!2sPetts%20Wood%20Rd%
+                2C%20Petts%20Wood%2C%20Orpington%2C%20UK!5e0!3m2!1sen!2slk!4v1608819259066!5m2!1sen!2slk"  width="100%"
+                 height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                
+            </div>
+          </div>  
+           
+               
+            </section>
+            
+        <!--creating the footer of the web site-->       
+
+        <footer class="low">
+        <ul class="navigator">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="homeFinder.html">HomeFinder</a></li>
+            <li><a href="propertyOne.html">properties</a></li>
+            <li><a href="contactUs.html">contact Us</a></li>
+        </ul>   
+       </footer> 
+       <!--Adding social media icons-->
+       <div class="low">
+         <div class="topicons">
+             <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+             <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+             <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+             <a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+         </div>
+         <p class="copy"> &copy; DreamHomes 2020</p>
+         <a href="#top"><i class="far fa-arrow-alt-circle-up"></i></a> 
+       </div> 
+            
+        
+        
+        <script> /*To make the header  sticky when scrolling down the page*/
+            window.addEventListener('scroll',function(){
+                const header =document.querySelector('header');
+                header.classList.toggle("sticky",window.scrollY >0);
+            });
+                    
+            $( function() {   /*function for the jqueru UI tabs*/
+              $( "#tabs" ).tabs();
+            } );
+            
+           
+          function toggleMenu() {    /*to make the header responsive when fiiting with different screens.*/
+           const menuToggle = document.querySelector('.menuToggle');
+           const navigation = document.querySelector('.navigation')
+           menuToggle.classList.toggle('active');
+           navigation.classList.toggle('active');
+         }
+        </script>
+</body>
+</html>            

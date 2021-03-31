@@ -1,0 +1,284 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   /*css flex box is used here*/
+    font-family:'Catamaran',sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 1000px;
+}    
+
+p   /* css font styles for the paragraphs*/
+{
+  font-weight: 300;
+  color:#111;
+}    
+ 
+    /* CSS styles for the header page*/
+
+header
+{
+    position: fixed;
+    top: 0;
+    left:0;
+    width:100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    
+} 
+.sticky{
+    background:rgb(92, 71, 71);
+    padding: 10px;
+    
+}   
+.logo{
+    color: rgb(168, 168, 108);
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+
+}
+
+.navigation{
+    position: relative;
+    display: flex;
+
+}
+
+.navigation li{
+    List-style: none;
+    margin-left:30px;
+
+}
+.navigation li a
+{
+    text-decoration: none;
+    color: rgb(15, 15, 15);
+    font-weight: 300;
+    font-style: italic;
+}
+
+.navigation li a:hover{
+    color:rgb(233, 76, 76)
+}
+.search{
+    padding: 100px;
+    width:100%;
+    min-height: 60vh;
+    background-color: rgb(206, 198, 198);
+    
+   
+}
+.row
+{
+    position:relative;
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    
+
+}
+.column{
+    position: relative;
+    width: 50%;
+}
+
+
+.imageBox{     /* Css styles for the large property image.*/
+    position: relative;
+    width:100%;
+    min-height: 300px;
+    height:130%
+}
+.imageBox img{
+
+    position:absolute;
+    top:0;
+    left:0;
+    width: 80%;
+    height: 70%;
+    object-fit: cover;
+    border:2px solid white;
+
+    
+}
+.tab{
+    max-width: 100%;
+    height: 500px;
+}
+.pics{
+    color: rgb(94, 91, 90);
+}
+
+         /*style for the css lightbox which is used for the thumbnails.*/
+.gallery{          
+  margin: 10px 50px;
+}
+.gallery img{
+  padding: 5px;
+  filter:grayscale(50%);
+  transition:0.5s;
+}
+.gallery img:hover{
+  filter:grayscale(0);
+  transform:scale(1.1);
+
+
+}
+.btn{
+    font-family: monospace;
+}
+.features li{
+    color: rgba(46, 49, 230, 0.993);
+    font-size: 17px;
+}
+           /*css styles for the footer of the web page*/
+.low{
+    
+    top: 0;
+    left:0;
+    width:100%;
+    padding: 40px 100px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.navigator{
+    position: relative;
+    display: flex;
+
+}
+
+.navigator li{
+    List-style: none;
+    margin-left:30px;
+
+}
+.navigator li a
+{
+    text-decoration: none;
+    color: rgb(20, 19, 19);
+    font-weight: 300;
+    font-style: italic;
+}
+
+.navigator li a:hover{
+    color:rgb(233, 76, 76)
+}
+
+.add{             /*css styles for the add button*/
+   font-size:0.7em;
+   color:#fff;
+   background:rgba(6, 233, 6, 0.863);
+   padding:10px 10px;
+   margin-top: 10px;
+   text-transform: uppercase;
+   text-decoration: none;
+   letter-spacing: 1px;
+   display:inline-block;
+   transition: 1s;
+   cursor: pointer;
+}
+
+
+.remove {       /*css styles for the remove button*/
+    font-size:0.7em;
+    color:#fff;
+    background:rgb(235, 54, 54);
+    padding:10px 10px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    display:inline-block;
+    transition: 1s;
+    cursor: pointer;
+} 
+
+/* Media queries for the web page*/
+
+@media(max-width:750px)  /* This  media query will only apply, If the screen size is 750px or less, */ 
+{
+    header,
+    .sticky 
+    {
+        padding:10px 20 px
+    }
+    .navigation{      /*the navigation link dissapper automatically*/ 
+        display: none
+    }
+    .navigation.active{    /* the navigation links will change their position when clicking*/
+        width:100%;
+        height: calc(100% -110px);
+        position:fixed;
+        top:68px;
+        left:0;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background:rgb(243, 222, 222);
+        padding: 10%;
+
+    }
+    .navigation li{       
+       margin-left: 0;
+    }
+    .navigation li a{   /*styles for the naviagtion links.*/
+        text-decoration: none;
+        color:#111;
+        font-size:1.3em;
+        font-weight:300;
+
+    }
+     
+    .menuToggle{        /* css styles for the menu toggle*/
+        position: relative;;
+        width:35px;
+        height:35px;
+        background-size: 30px;
+        background: url(menu.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;    
+
+    }
+    .menuToggle.active{     /*css styles when clicking the menu toggle icon*/
+        background-size: 25px;
+        background: url(close.png);
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+    .sticky.menuToggle
+    {
+        filter:invert(1)
+    }
+
+    .row{
+        
+        flex-direction: column;   /*THe flex direction of the row will changes*/
+    }
+    .column{        
+        position: relative;
+        width: 100%;
+
+    }
+    .imageBox{       /* large Image in the property section  will fit with given space.*/
+        height:300px;
+        margin-top: 20px;
+    } 
+} 
+ 
+
+
+

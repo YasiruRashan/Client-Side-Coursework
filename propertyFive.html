@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"> <!--The default character-set in HTML5 is UTF-8.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamHomes</title>
+    <link rel="stylesheet" href="css/properties.css">
+    <link href='https://fonts.googleapis.com/css?family=Catamaran' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link rel="stylesheet" href="css/fa/css/all.min.css">
+   <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/lightbox.min.css" >
+    <script src="lightbox/lightbox.js"></script>
+    <script src="jqueryFile.js"></script>
+
+    
+    
+  </head>
+    <body>
+     
+        <header class="sticky">
+          <a href="home.html" class="logo">DreamHomes.</a> <!--creating the logo of the website-->
+          <div class="menuToggle" onclick="toggleMenu();"></div>
+          <ul class="navigation">      <!--adding navigation links to the navigation bar-->
+             <li><a href="home.html">Home</a></li>
+             <li><a href="homeFinder.html">HomeFinder</a></li>
+             <li><a href="propertyOne.html">Properties</a></li>
+             <li><a href="contactUs.html">Contact Us</a></li>
+             
+         </ul>
+        </header> 
+         <section class="search" ;>  <!--creating a section tag to hold a large image and a short description of the property.-->
+            <div class="row">
+                <div class="column">
+                    <h2>Property Five</h2><br>
+                 <p>The property is arranged over the first and second floors of this mid terraced Victorian property and offers light in abundance due to its 
+                    East to West orientation. The accommodation is laid out at just over 1500 sq ft, entered via its own entrance on the raised ground floor.
+                    The stairs lead you to the first floor landing taking you to a beautiful main reception which features a period fireplace 
+                    and sash windows, kitchen/diner with direct access to its own section of rear garden and refitted shower room. The upper floor has two 
+                    further double bedrooms with over 100sqft worth of extra storage space in the loft.</p><br>
+                    <ul class="features">
+                        <li>No of Bedrooms: 3</li>
+                        <li>Prpperty Type: House</li>
+                        <li>Price: $250000</li>
+                        <li>location: Parkholme Road, London, E8</li>
+                        <li>tenure: leasehold</li>
+                    </ul>
+                </div>
+                <div class="column">
+                   <div class="imageBox">
+                       <img src="img/prop5pic1.jpg">
+                   </div> 
+                </div>   
+            </div>
+            <hr>
+
+           <!---->
+            <div class="gallery"> <!--creating a section to hold thumbnail images. css lightbox is used here.-->
+              <h3 class="pics">More photos....</h3>
+            <a href="img/prop1pic2.jpg" data-lightbox="mygallery"><img src="img/prop1pic2small.jpg"></a> <!-- a thubnail image is  maximised into its default image size with a one mouse click-->
+            <a href="img/prop1pic3.jpg" data-lightbox="mygallery"><img src="img/prop1pic3small.jpg"></a>
+            <a href="img/prop2pic3.jpg" data-lightbox="mygallery"><img src="img/prop2pic3small.jpg"></a>
+            <a href="img/prop1pic4.jpg" data-lightbox="mygallery"><img src="img/prop1pic4small.jpg"></a>
+            <a href="img/prop2pic5.jpg" data-lightbox="mygallery"><img src="img/prop2pic5small.jpg"></a>
+            <a href="img/prop2pic6.jpg" data-lightbox="mygallery"><img src="img/prop2pic6small.jpg"></a>
+            <a href="img/prop2pic8.jpg" data-lightbox="mygallery"><img src="img/prop2pic8small.jpg"></a>
+            <a href="img/prop2pic1.jpg" data-lightbox="mygallery"><img src="img/prop2pic1small.jpg"></a>
+           
+
+            <p id="prop5">
+              <button class="add">favourite</button> <!--Creating add button to add property to the favourite list-->
+              <button class="remove">delete</button> <!--Creating remove button to remove property from the favourite list-->
+            </p>
+          </div>
+         </section>
+
+         <section>
+        
+          <div id="tabs">        <!--creating jquery tab plane to hold three tabs such as long description and, floor plan and google map.-->       
+            <ul>
+              <li><a href="#tabs-1">Property description</a></li>
+              <li><a href="#tabs-2">Floor Plan</a></li>
+              <li><a href="#tabs-3">location</a></li>
+            </ul>
+            <div id="tabs-1">  <!--tab for the poperty description-->
+            <p>
+                Exciting times, we want to invite you to view this stunning, fully refurbished detached property along with its detached barn conversion that serves as a annexe to the main property,
+                 known as,  Knowle Farm & Knowle Barn.  Only upon an internal inspection will the prospective purchaser appreciate this 
+                 really is a rare opportunity to obtain this unique freehold.The internal accommodation on the main property - 
+                 Knowle Farm is briefly; Ground Floor - Entrance porch, dining kitchen, dining room, luxury bathroom, morning
+                  room, day room, lounge, and study/library.  There is a luxurious guest suite, two further bedrooms and shower 
+                  room.  The first floor landing lends its self to a study area.
+              </P><br>
+              <p>
+                Knowle Barn - Converted to a high standard having an open plan fitted kitchen and luxury shower room.  The barn 
+                lends it self to a variety of uses depending on individual requirements. Situated in this popular semi-rural 
+                location, a short distance to Wyke village which offers a vast array of local amenities, shops, supermarkets 
+                and schools for all ages of children.  For the commuter access to both the M62 and M606 motorways is just minutes away.
+              </p><br>
+              <p>
+                The heart of this family home is undoubtedly the dining kitchen which has a range of fitted cream wall and base units
+                complimented by solid oak work tops and a double ceramic Belfast sink under the double glazed window with front outlook.
+                There is a Range Master cooker, dual fuel with electric ovens. Integral appliances to include a dishwasher and washing 
+                machine.There is a stone arch into the dining room and solid oak floor continues throughout most of the ground floor.
+              </p><br>
+
+              <a href="propertySix.html" class="btn"><b>Go to the Next Property</b></a>
+
+            </div>
+            <div id="tabs-2">  <!--tab for the follor plan-->
+              <img src="img/prop1Plan.jpg" class="tab" alt="Cinque Terre" width="700" height="50">
+            </div>
+
+
+            <div id="tabs-3">  <!--tab for the google map location-->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3572.109646106299!2d0.0802613105479301!
+                3d51.39110686536441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8ab82cc8f3cb1%3A0xc746da03b0c6c716!2sPetts%20Wood%20Rd%
+                2C%20Petts%20Wood%2C%20Orpington%2C%20UK!5e0!3m2!1sen!2slk!4v1608819259066!5m2!1sen!2slk" 
+                width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+               
+            </section>
+                <!--creating the footer of the web site-->
+
+        <footer class="low">
+        <ul class="navigator">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="homeFinder">HomeFinder</a></li>
+            <li><a href="propertyOne.html">properties</a></li>
+            <li><a href="contactUs.html">contact Us</a></li>
+        </ul>   
+       </footer> 
+       <!--Adding social media icons-->
+       <div class="low">
+         <div class="topicons">
+             <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+             <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+             <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+             <a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+         </div>
+         <p class="copy"> &copy; DreamHomes 2020</p>
+         <a href="#top"><i class="far fa-arrow-alt-circle-up"></i></a> 
+       </div> 
+      
+       <script> /*To make the header  sticky when scrolling down the page*/
+        window.addEventListener('scroll',function(){
+            const header =document.querySelector('header');
+            header.classList.toggle("sticky",window.scrollY >0);
+        });
+                
+        $( function() {  /*function for the jqueru UI tabs*/
+          $( "#tabs" ).tabs();
+        } );
+        
+        
+      function toggleMenu() { /*function to make the header responsive when fiiting with different screens.*/
+       const menuToggle = document.querySelector('.menuToggle');
+       const navigation = document.querySelector('.navigation')
+       menuToggle.classList.toggle('active');
+       navigation.classList.toggle('active');
+     }
+    </script>       
+      
+</body>
+</html>            

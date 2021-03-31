@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">  <!--The default character-set in HTML5 is UTF-8.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamHomes</title>
+    <link rel="stylesheet" href="css/properties.css">
+    <link href='https://fonts.googleapis.com/css?family=Catamaran' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link rel="stylesheet" href="css/fa/css/all.min.css">
+   <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/lightbox.min.css" >
+    <script src="lightbox/lightbox.js"></script>
+    <script src="jqueryFile.js"></script>
+
+    
+    
+  </head>
+    <body>
+     
+        <header class="sticky">
+          <a href="home.html" class="logo">DreamHomes.</a> <!--creating the logo of the website-->
+          <div class="menuToggle" onclick="toggleMenu();"></div>
+          <ul class="navigation">      <!--adding navigation links to the navigation bar-->
+             <li><a href="home.html">Home</a></li>
+             <li><a href="homeFinder.html">HomeFinder</a></li>
+             <li><a href="propertyOne.html">Properties</a></li>
+             <li><a href="contactUs.html">Contact Us</a></li>
+             
+         </ul>
+        </header> 
+         <section class="search" ;>  <!--creating a section tag to hold a large image and a short description of the property.-->
+            <div class="row">
+                <div class="column">
+                    <h2>Property Four</h2><br>
+                    <p>A rare opportunity to purchase a magnificent loft style apartment, set within a beautiful Grade II listed Modernist building. Designed by the architects
+                        Burnet, Tait & Lorne, Bruno Court was built in 1935-36 as an extension to the German Hospital and is located on the North West corner of Fassett Square, a peaceful
+                        and beautifully landscaped garden square with exclusive access to its residents.With approx. 1,165 sq ft of accommodation, this apartment comprises three double 
+                        bedrooms, main family bathroom, en suite, and a stunning open plan kitchen/reception with solid wood flooring and high ceilings, making this a wonderful place to 
+                        entertain family and friends.
+                      <br> </p><br>
+                    <ul class="features">
+                        <li>No of Bedrooms: 2</li>
+                        <li>Property Type: Flat</li>
+                        <li>Price: $950000</li>
+                        <li>location: Bruno Court, 10 Fassett Square, London, E8</li>
+                        <li>tenure: Freehold</li>
+                    </ul>
+                </div>
+                <div class="column">
+                   <div class="imageBox">
+                       <img src="img/prop4pic1.jpg">
+                   </div> 
+                </div>   
+            </div>
+            <hr>
+
+           <!---->
+          <div class="gallery"> <!--creating a section to hold thumbnail images. css lightbox is used here.-->
+              <h3 class="pics">More photos....</h3>
+            <a href="img/prop1pic2.jpg" data-lightbox="mygallery"><img src="img/prop1pic2small.jpg"></a> <!-- a thubnail image is  maximised into its default image size with a one mouse click-->
+            <a href="img/prop1pic3.jpg" data-lightbox="mygallery"><img src="img/prop1pic3small.jpg"></a>
+            <a href="img/prop2pic3.jpg" data-lightbox="mygallery"><img src="img/prop2pic3small.jpg"></a>
+            <a href="img/prop1pic4.jpg" data-lightbox="mygallery"><img src="img/prop1pic4small.jpg"></a>
+            <a href="img/prop2pic5.jpg" data-lightbox="mygallery"><img src="img/prop2pic5small.jpg"></a>
+            <a href="img/prop2pic6.jpg" data-lightbox="mygallery"><img src="img/prop2pic6small.jpg"></a>
+            <a href="img/prop2pic8.jpg" data-lightbox="mygallery"><img src="img/prop2pic8small.jpg"></a>
+            <a href="img/prop2pic1.jpg" data-lightbox="mygallery"><img src="img/prop2pic1small.jpg"></a>
+
+            <p id="prop4">
+              <button class="add">favourite</button> <!--Creating add button to add property to the favourite list-->
+              <button class="remove">delete</button> <!--Creating remove button to remove property from the favourite list-->
+            </p>
+          </div>
+  
+         </section>
+            
+         <section>
+        
+          <div id="tabs">        <!--creating jquery tab plane to hold three tabs such as long description and, floor plan and google map.-->       
+            <ul>
+              <li><a href="#tabs-1">Property description</a></li>
+              <li><a href="#tabs-2">Floor Plan</a></li>
+              <li><a href="#tabs-3">location</a></li>
+            </ul>
+            <div id="tabs-1">  <!--tab for the poperty description-->
+              <p>This substantial HMO property has accommodation laid out over three floors and offers a fantastic investment opportunity. 
+                  Featuring eight bedrooms within the main house, there is a separate annex/apartment with two further bedrooms and a commercial
+                   let on the ground floor. The whole development produces an approximate income of £65,000 per annum with the shop held on a 
+                   commercial lease. For details on potential future income and current tenancy lengths please contact the office. Located just 
+                   a stone's throw from Acomb shops, the property has good links with the city centre and easy access to the outer ring road.
+              </p><br>
+              <p>The main HMO property is accessed on the ground floor where there is an entrance hall, a utility room and one double bedroom with an 
+                  en-suite. A sweeping staircase leads to a large landing space. On the first floor are four further double bedrooms which all have 
+                en-suites and there is a separate shower room and a kitchen. To the top floor are three more bedrooms,
+                 one of which is a separate flat with a private bathroom and kitchen, and a further kitchen. Attached to the side of the main building is
+                 the annex/apartment
+              </p><br>
+              <p></p>On the ground floor level is an open plan living space with a fitted kitchen. On the first floor is a bedroom and a shower room. 
+              Finally the top floor boasts a large double bedroom with storage. The commercial premises is accessed to the front.
+              Outside the property is ample off street parking to the rear with four parking spaces.   
+              </p><br>
+              <a href="propertyFive.html" class="btn"><b>Go to the Next Property</b></a>
+      
+                
+          
+            </div>
+            <div id="tabs-2">  <!--tab for the follor plan-->
+              <img src="img/prop1Plan.jpg" class="tab" alt="Cinque Terre" width="700" height="70">
+            </div>
+
+
+            <div id="tabs-3">  <!--tab for the google map location-->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3572.109646106299!2d0.0802613105479301!
+                3d51.39110686536441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8ab82cc8f3cb1%3A0xc746da03b0c6c716!2sPetts%20Wood%20Rd%
+                2C%20Petts%20Wood%2C%20Orpington%2C%20UK!5e0!3m2!1sen!2slk!4v1608819259066!5m2!1sen!2slk" 
+                width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+               
+            </section>
+                <!--creating the footer of the web site-->
+
+        <footer class="low">
+        <ul class="navigator">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="homeFinder.html">HomeFinder</a></li>
+            <li><a href="propertyOne.html">properties</a></li>
+            <li><a href="contactUs.html">contact Us</a></li>
+        </ul>   
+       </footer> 
+       <!--Adding social media icons-->
+       <div class="low">
+         <div class="topicons">
+             <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+             <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+             <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+             <a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+         </div>
+         <p class="copy"> &copy; DreamHomes 2020</p>
+         <a href="#top"><i class="far fa-arrow-alt-circle-up"></i></a> 
+       </div> 
+       
+       <script> /*To make the header  sticky when scrolling down the page*/
+        window.addEventListener('scroll',function(){
+            const header =document.querySelector('header');
+            header.classList.toggle("sticky",window.scrollY >0);
+        });
+                
+        $( function() { /*function for the jqueru UI tabs*/
+          $( "#tabs" ).tabs();
+        } );
+        
+       
+
+      function toggleMenu() {   /*function to make the header responsive when fiiting with different screens.*/
+       const menuToggle = document.querySelector('.menuToggle');
+       const navigation = document.querySelector('.navigation')
+       menuToggle.classList.toggle('active');
+       navigation.classList.toggle('active');
+     }
+    </script>       
+</body>
+</html>            
